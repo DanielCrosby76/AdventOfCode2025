@@ -5,7 +5,7 @@ const ranges = fs.readFileSync("input.csv", "utf8").split(",");
 let partOneTotal = 0;
 let partTwoTotal = 0;
 
-const isRepeatedHalf = id => id.length % 2 === 0 && id.slice(0, id.length / 2) === id.slice(id.length / 2);
+const isRepeatedHalf = (id) => id.length % 2 === 0 && id.slice(0, id.length / 2) === id.slice(id.length / 2);
 
 const isRepeatedPattern = (id) => (id + id).slice(1, -1).includes(id);
 
